@@ -41,17 +41,17 @@ export default function Education() {
                   <GraduationCap size={15} className="text-slate-500 dark:text-cyan-400" />
                 </div>
                 <div className="min-w-0">
-                  <h3 className="text-lg font-semibold">
+                  <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">
+                    {edu.qualification}<span className="text-slate-300 dark:text-slate-600 mx-2">·</span>{edu.result}
+                  </h3>
+                  <p className="font-mono text-base text-slate-600 dark:text-slate-400 mt-0.5">
                     {edu.url ? (
-                      <a href={edu.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-slate-800 dark:text-slate-200 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                      <a href={edu.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                         {edu.school}<ExternalLink size={13} className="opacity-60" />
                       </a>
                     ) : (
-                      <span className="text-slate-800 dark:text-slate-200">{edu.school}</span>
+                      edu.school
                     )}
-                  </h3>
-                  <p className="font-mono text-base text-slate-600 dark:text-slate-400 mt-0.5">
-                    {edu.qualification}<span className="text-slate-300 dark:text-slate-600 mx-2">·</span>{edu.result}
                   </p>
                 </div>
               </div>
