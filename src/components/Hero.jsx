@@ -8,7 +8,7 @@ export default function Hero() {
         {/* Left: Avatar */}
         <div className="shrink-0">
           <img
-            src="/hero.jpg"
+            src={`${import.meta.env.BASE_URL}hero.jpg`}
             alt="Oi Jia Zhun"
             className="w-36 md:w-48 rounded-md border border-slate-200 dark:border-slate-700 shadow-sm"
           />

@@ -10,7 +10,7 @@ export default function Certificate() {
         </div>
 
         <a
-          href="/fyp.jpg"
+          href={`${import.meta.env.BASE_URL}fyp.jpg`}
           target="_blank"
           rel="noopener noreferrer"
           className="group block rounded-xl border border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900/50 hover:border-cyan-400/40 dark:hover:border-cyan-500/30 hover:shadow-sm dark:hover:shadow-none transition-all duration-300 w-48"
@@ -18,7 +18,7 @@ export default function Certificate() {
           {/* Thumbnail with overlay */}
           <div className="relative overflow-hidden rounded-t-xl">
             <img
-              src="/fyp.jpg"
+              src={`${import.meta.env.BASE_URL}fyp.jpg`}
               alt="FICT FYP Competition"
               className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-500"
             />
