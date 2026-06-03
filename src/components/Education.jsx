@@ -11,13 +11,13 @@ const education = [
     school: 'University Tunku Abdul Rahman (UTAR)',
     url: 'https://utar.edu.my/',
     qualification: 'Foundation in Arts',
-    result: 'CGPA: 3.5608',
+    result: 'CGPA: 3.56',
   },
   {
     school: 'University Tunku Abdul Rahman (UTAR)',
     url: 'https://utar.edu.my/',
     qualification: 'Bachelor of Computer Science',
-    result: 'CGPA: 3.3489',
+    result: 'CGPA: 3.35',
   },
 ]
 

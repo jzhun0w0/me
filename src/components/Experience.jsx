@@ -13,13 +13,13 @@ const experiences = [
     company: 'Peak Long Chuang',
     url: 'https://www.facebook.com/p/Peak-Long-Chuang-100011645200468/',
     period: 'Nov 2025 - Nov 2025',
-    description: 'Managed records, organized data, and optimized internal administrative processes.',
+    description: 'Managed records, organized data, and optimized internal administrative processes',
   },
   {
     role: 'Preschool Teacher',
     company: 'Morning Dew Kindergarten',
     url: 'https://www.facebook.com/morningdewkindergarten/',
-    period: 'Oct 2024 – Feb 2025',
+    period: 'Oct 2023 – Feb 2024',
     description: 'Taught Chinese and Mathematics; developed communication and leadership skills.',
   },
   {
@@ -27,7 +27,7 @@ const experiences = [
     company: 'Grab',
     url: 'https://www.grab.com/my/',
     period: 'Oct 2022 – Sep 2024',
-    description: 'Managed time-sensitive deliveries across a high-volume territory with consistent reliability.',
+    description: 'Managed time-sensitive deliveries across a high-volume territory with consistent reliability',
   },
 ]
 
