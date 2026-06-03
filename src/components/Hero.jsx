@@ -1,4 +1,23 @@
-import { MapPin, ExternalLink, Mail, Phone, Calendar, Code2 } from 'lucide-react'
+import { MapPin, Mail, Code2 } from 'lucide-react'
+
+function EmailLink() {
+  const user = 'jiazhub123456'
+  const domain = 'gmail.com'
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    window.location.href = `mailto:${user}@${domain}`
+  }
+
+  return (
+    <a href="#"
+      onClick={handleClick}
+      className="inline-flex items-center gap-2 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+    >
+      <Mail size={14} /> {user}@{domain}
+    </a>
+  )
+}
 
 export default function Hero() {
   return (
@@ -23,29 +42,14 @@ export default function Hero() {
           <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-5 max-w-xl text-justify">
             A Computer Science student from UTAR with strong problem-solving skills and a diverse work experience in education, programming, and the service industry. Skilled in using various programming languages and office software.
           </p>
-          <div className="text-base font-mono text-slate-600 dark:text-slate-500 space-y-1.5">
-            <div className="flex flex-wrap gap-x-6 gap-y-1.5">
-              <div className="flex items-center gap-2">
-                <Phone size={14} />
-                <a href="tel:+60162516297" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">+60 16-251 6297</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail size={14} />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jiazhub123456@gmail.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">jiazhub123456@gmail.com</a>
-              </div>
-              <div className="flex items-center gap-2">
-                <Code2 size={14} />
-                <a href="https://github.com/jzhun0w0" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">jzhun0w0</a>
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-1.5">
-              <div className="flex items-center gap-2">
-                <MapPin size={14} /> Chemor, Perak
-              </div>
-              <div className="flex items-center gap-2">
-                <Calendar size={14} /> May 2004
-              </div>
-            </div>
+          <div className="flex flex-wrap gap-x-6 gap-y-1.5 text-base font-mono text-slate-600 dark:text-slate-500">
+            <EmailLink />
+            <a href="https://github.com/jzhun0w0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+              <Code2 size={14} /> jzhun0w0
+            </a>
+            <span className="inline-flex items-center gap-2">
+              <MapPin size={14} /> Chemor, Perak
+            </span>
           </div>
         </div>
 
