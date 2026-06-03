@@ -1,4 +1,4 @@
-import { MapPin, Mail, Code2 } from 'lucide-react'
+import { MapPin, Mail, Code2, ExternalLink } from 'lucide-react'
 
 function EmailLink() {
   const user = 'jiazhub123456'
@@ -14,7 +14,7 @@ function EmailLink() {
       onClick={handleClick}
       className="inline-flex items-center gap-2 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
     >
-      <Mail size={14} /> {user}@{domain}
+      <Mail size={14} /> {user}@{domain}<ExternalLink size={12} className="opacity-60" />
     </a>
   )
 }
@@ -45,7 +45,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-x-6 gap-y-1.5 text-base font-mono text-slate-600 dark:text-slate-500">
             <EmailLink />
             <a href="https://github.com/jzhun0w0" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
-              <Code2 size={14} /> jzhun0w0
+              <Code2 size={14} /> jzhun0w0<ExternalLink size={12} className="opacity-60" />
             </a>
             <span className="inline-flex items-center gap-2">
               <MapPin size={14} /> Chemor, Perak
