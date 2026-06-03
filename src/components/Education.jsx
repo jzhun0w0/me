@@ -17,7 +17,7 @@ const education = [
     school: 'University Tunku Abdul Rahman (UTAR)',
     url: 'https://utar.edu.my/',
     qualification: 'Bachelor of Computer Science',
-    result: 'Current CGPA: 3.3489',
+    result: 'CGPA: 3.3489',
   },
 ]
 
@@ -42,8 +42,9 @@ export default function Education() {
                 </div>
                 <div className="min-w-0">
                   <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200">
-                    {edu.qualification}<span className="text-slate-300 dark:text-slate-600 mx-2">·</span>{edu.result}
+                    {edu.qualification}
                   </h3>
+                  <p className="font-mono text-base text-slate-600 dark:text-slate-400 mt-0.5">{edu.result}</p>
                   <p className="font-mono text-base text-slate-600 dark:text-slate-400 mt-0.5">
                     {edu.url ? (
                       <a href={edu.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">

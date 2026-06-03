@@ -2,7 +2,7 @@ import { Globe, MessageCircle } from 'lucide-react'
 
 const languages = [
   { lang: 'Chinese', level: 'Native', desc: 'Reading, Writing, Listening, Speaking' },
-  { lang: 'English', level: 'Professional (B2)', desc: 'Reading, Writing, Listening, Speaking', extra: 'MUET: Band 3.5' },
+  { lang: 'English', level: 'Professional (B2)', desc: 'Reading, Writing, Listening, Speaking', extra: '(MUET: Band 3.5)' },
   { lang: 'Bahasa Melayu', level: 'Conversational (A2)', desc: 'Listening, Speaking' },
 ]
 
@@ -30,9 +30,9 @@ export default function Footer() {
                 <li key={l.lang}>
                   <span className="text-base font-medium text-slate-800 dark:text-slate-200">{l.lang}</span>
                   <span className="text-base text-slate-600 dark:text-slate-400"> — {l.level}</span>
-                  <p className="text-sm text-slate-600 dark:text-slate-500 mt-0.5">{l.desc}</p>
+                  <p className="text-base text-slate-600 dark:text-slate-400">{l.desc}</p>
                   {l.extra && (
-                    <p className="text-sm text-slate-500 dark:text-cyan-500/60 mt-0.5">{l.extra}</p>
+                    <p className="text-base text-slate-600 dark:text-slate-400">{l.extra}</p>
                   )}
                 </li>
               ))}
@@ -58,7 +58,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-10 text-center font-mono text-xs text-slate-400 dark:text-slate-600">
-          &copy; {new Date().getFullYear()} Oi Jia Zhun. Built with React + Tailwind CSS.
+          &copy; {new Date().getFullYear()} Oi Jia Zhun's Resume.
         </p>
       </div>
     </footer>
