@@ -56,9 +56,9 @@ export default function Experience() {
                 <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                   {exp.role}
                 </h3>
-                <p className="text-base text-slate-500 dark:text-cyan-500/60 font-mono mb-1">
+                <p className="text-base text-slate-500 dark:text-slate-300/60 font-mono mb-1">
                   {exp.url ? (
-                    <a href={exp.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-slate-400 transition-colors">
+                    <a href={exp.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
                       {exp.company}<ExternalLink size={12} className="opacity-60" />
                     </a>
                   ) : (
