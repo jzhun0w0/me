@@ -1,4 +1,5 @@
 import { Globe, MessageCircle } from 'lucide-react'
+import useScrollReveal from '../useScrollReveal'
 
 const languages = [
   { lang: 'Chinese', level: 'Native', desc: 'Reading, Writing, Listening, Speaking' },
@@ -15,8 +16,9 @@ const strengths = [
 ]
 
 export default function Footer() {
+  const [ref, visible] = useScrollReveal()
   return (
-    <footer className="py-12 px-4">
+    <footer ref={ref} className={`py-12 px-4 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
           {/* Languages */}

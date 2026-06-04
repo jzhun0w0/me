@@ -1,4 +1,5 @@
 import { Mic, GitBranch, Layers, Cpu, BarChart3 } from 'lucide-react'
+import useScrollReveal from '../useScrollReveal'
 
 const projects = [
   {
@@ -36,8 +37,9 @@ const academics = [
 ]
 
 export default function Projects() {
+  const [ref, visible] = useScrollReveal()
   return (
-    <section className="py-12 px-4" id="projects">
+    <section ref={ref} className={`py-12 px-4 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} id="projects">
       <div className="max-w-5xl mx-auto">
         <div className="mb-8">
           <p className="font-mono text-xs text-slate-500 dark:text-cyan-400 uppercase tracking-[0.2em] mb-2">Projects</p>
