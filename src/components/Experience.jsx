@@ -21,7 +21,7 @@ const experiences = [
     company: 'Morning Dew Kindergarten',
     url: 'https://www.facebook.com/morningdewkindergarten/',
     period: 'Oct 2023 – Feb 2024',
-    description: 'Taught Chinese and Mathematics; developed communication and leadership skills.',
+    description: 'Taught Chinese and Mathematics',
   },
   {
     role: 'Food Delivery Driver',
@@ -58,7 +58,7 @@ export default function Experience() {
                 </h3>
                 <p className="text-base text-slate-500 dark:text-cyan-500/60 font-mono mb-1">
                   {exp.url ? (
-                    <a href={exp.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors">
+                    <a href={exp.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-cyan-600 dark:hover:text-slate-400 transition-colors">
                       {exp.company}<ExternalLink size={12} className="opacity-60" />
                     </a>
                   ) : (
