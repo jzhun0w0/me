@@ -40,7 +40,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-5 max-w-xl text-justify">
-            A Computer Science student from UTAR with strong problem-solving skills and a diverse work experience in education, programming, and the service industry. Skilled in using various programming languages and office software.
+            A Computer Science student from UTAR with strong problem-solving skills and a diverse work experience in education, programming, and the service industry. Skilled in using various programming languages and office software
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-1.5 text-base font-mono text-slate-600 dark:text-slate-500">
             <EmailLink />

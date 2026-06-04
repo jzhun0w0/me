@@ -30,10 +30,10 @@ const projects = [
 ]
 
 const academics = [
-  { title: 'Restaurant Food Ordering System', tech: 'C++', desc: 'Console app with order management, menu browsing, and billing.' },
-  { title: 'Hospital Management System', tech: 'Java', desc: 'Patient records, doctor scheduling, and appointment booking.' },
-  { title: 'Library Management System', tech: 'Oracle · Microsoft Access', desc: 'Full CRUD database system with report generation.' },
-  { title: 'Malaysia Cuisine Website', tech: 'HTML5 · CSS · JS · Bootstrap 4', desc: 'Responsive multi-page website showcasing Malaysian food.' },
+  { title: 'Restaurant Food Ordering System', tech: 'C++', desc: 'Console app with order management, menu browsing, and billing' },
+  { title: 'Hospital Management System', tech: 'Java', desc: 'Patient records, doctor scheduling, and appointment booking' },
+  { title: 'Library Management System', tech: 'Oracle · Microsoft Access', desc: 'Full CRUD database system with report generation' },
+  { title: 'Malaysia Cuisine Website', tech: 'HTML5 · CSS · JS · Bootstrap 4', desc: 'Responsive multi-page website showcasing Malaysian food' },
 ]
 
 export default function Projects() {
